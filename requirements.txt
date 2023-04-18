@@ -1,0 +1,2 @@
+steamship===2.16.1
+pypdf==3.5.2

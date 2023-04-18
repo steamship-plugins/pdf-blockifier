@@ -1,0 +1,39 @@
+{
+	"type": "plugin",
+	"handle": "pdf-blockifier",
+	"version": "1.0.0",
+	"description": "Blockify PDFs",
+	"author": "",
+	"entrypoint": "src.api.handler",
+	"public": true,
+	"plugin": {
+		"isTrainable": false,
+		"transport": "jsonOverHttp",
+		"type": "blockifier"
+	},
+	"build_config": {
+		"ignore": []
+	},
+	"configTemplate": {
+
+	},
+	"steamshipRegistry": {
+		"tagline": "Load PDFs for question answering and knowledge search.",
+		"tagline2": "Supports Text PDFs and generates blocks at the page level.",
+		"usefulFor": "",
+		"videoUrl": null,
+		"githubUrl": "https://github.com/steamship-plugins/pdf-blockifier",
+		"demoUrl": null,
+		"blogUrl": null,
+		"jupyterUrl": null,
+		"authorGithub": null,
+		"authorName": "Steamship",
+		"authorEmail": "hello@steamship.com",
+		"authorTwitter": "@GetSteamship",
+		"authorUrl": "https://www.steamship.com/",
+		"tags": [
+			"NLP",
+			"PDF"
+		]
+	}
+}
