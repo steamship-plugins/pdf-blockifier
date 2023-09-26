@@ -10,7 +10,6 @@ from steamship.plugin.request import PluginRequest
 
 from src.api import PdfBlockifier
 
-ENVIRONMENT = "prod"
 
 def _read_test_pdf_file(filename: str) -> str:
     with (TEST_DATA / filename).open("rb") as f:
@@ -20,7 +19,7 @@ def _read_test_pdf_file(filename: str) -> str:
 def test_blockifier():
     """Test AssemblyAI (S2T) Blockifier without edge cases."""
     config = load_config()
-    client = Steamship(profile=ENVIRONMENT)
+    client = Steamship()
     blockifier = PdfBlockifier(client=client, config=config)
     request = PluginRequest(
         data=RawDataPluginInput(
