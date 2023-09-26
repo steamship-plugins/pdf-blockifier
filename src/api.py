@@ -58,6 +58,10 @@ class PdfBlockifier(Blockifier):
         for i, page in enumerate(pdf_reader.pages):
             text = page.extract_text()
 
+            # Blank pages cause empty blocks, which cause problems for embedders.
+            if text == "": 
+                continue
+                
             # Fix an encoding bug that sometimes arises.
             text = re.sub("\u0000", "", text)
                    
