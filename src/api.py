@@ -1,7 +1,4 @@
-"""AssemblyAI speech-to-text blockifier.
-
-An audio file is loaded and converted into blocks, with tags added according to the plugin configuration.
-"""
+"""PDF blockifier."""
 import logging
 from typing import Any, Dict, Optional, Type, Union
 from uuid import uuid4
