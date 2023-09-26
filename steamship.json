@@ -1,7 +1,7 @@
 {
 	"type": "plugin",
 	"handle": "pdf-blockifier",
-	"version": "1.0.0",
+	"version": "1.0.1-rc.1",
 	"description": "Blockify PDFs",
 	"author": "",
 	"entrypoint": "src.api.handler",
@@ -15,7 +15,11 @@
 		"ignore": []
 	},
 	"configTemplate": {
-
+		"loader": {
+			"type": "string",
+			"description": "The data loader to use (default: pypdf).",
+			"default": "pypdf"
+		}
 	},
 	"steamshipRegistry": {
 		"tagline": "Load PDFs for question answering and knowledge search.",
