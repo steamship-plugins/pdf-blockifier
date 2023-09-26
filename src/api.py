@@ -62,7 +62,7 @@ class PdfBlockifier(Blockifier):
             text = page.extract_text()
 
             # Blank pages cause empty blocks, which cause problems for embedders.
-            if text = "": 
+            if text == "": 
                 continue
                 
             # Fix an encoding bug that sometimes arises.
